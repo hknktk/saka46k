@@ -1,0 +1,596 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 70px;
+  background-color: rgb(252, 235, 9);
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #fff;
+  text-shadow: -3px 2px 0 #000;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main #tab {
+  display: flex;
+  justify-content: center;
+}
+
+#tab li {
+  width: 33.3%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#tab a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.5s;
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+#tab li a:not(.active):hover {
+  font-size: 25px;
+}
+
+#tab #nogi a.active {
+  background-color: rgb(196, 2, 255);
+}
+#tab #saku a.active {
+  background-color: rgb(255, 161, 239);
+}
+#tab #hina a.active {
+  background-color: rgb(0, 217, 255);
+}
+
+#nogi {
+  background-color: #fff;
+  border-top: 2px solid rgb(196, 2, 255);
+  border-right: 2px solid rgb(196, 2, 255);
+  border-left: 2px solid rgb(196, 2, 255);
+}
+
+#saku {
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 161, 239);
+  border-right: 2px solid rgb(255, 161, 239);
+  border-left: 2px solid rgb(255, 161, 239);
+}
+
+#hina {
+  background-color: #fff;
+  border-top: 2px solid rgb(0, 217, 255);
+  border-right: 2px solid rgb(0, 217, 255);
+  border-left: 2px solid rgb(0, 217, 255);
+}
+
+/* コンテンツの中身 */
+.contents li {
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.contents li.active {
+  display: block;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+#n46 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(196, 2, 255);
+  padding: 20px;
+}
+
+h2 {
+  display: block;
+  background-color: #fff;
+  white-space: nowrap;
+  width: 60%;
+  height: 70px;
+  padding: 20px 20px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 3;
+}
+
+h2::first-letter{
+  font-size: 150%;
+  color:#000;
+}
+
+#n46 h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(196, 2, 255);
+  padding: 20px 0;
+  position: relative;
+}
+
+#n46 a {
+  color: rgb(196, 2, 255);
+}
+
+#n46 a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(196, 2, 255);
+}
+
+#ngroup,
+#nprogram,
+#nmember,
+#nmusic {
+  width: 90%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#ngroup,
+#nprogram,
+#nmember,
+#nmusic {
+  padding: 20px;
+  border: 3px solid rgb(196, 2, 255);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.person {
+  border: double 2px rgb(252, 235, 9);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  display: block;
+  top: 0%;
+  padding-bottom: 30px;
+  width: 30%;
+  height: 200px;
+  object-fit: contain;
+}
+
+#s46 a {
+  color:  rgb(255, 161, 239);
+}
+
+#s46 a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color:  rgb(255, 161, 239);
+}
+
+#s46 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(255, 161, 239);
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 3;
+}
+
+#s46 h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 161, 239);
+  padding: 20px 0;
+  position: relative;
+}
+
+
+
+#sgroup,
+#sprogram,
+#smember,
+#smusic {
+  width: 90%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+#sgroup,
+#sprogram,
+#smember,
+#smusic {
+  padding: 20px;
+  border: 3px solid rgb(255, 161, 239);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+#smusic h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(21, 255, 0);
+  padding: 20px 0;
+  position: relative;
+
+}
+
+#smusic a{
+  color:rgb(21, 255, 0);
+}
+
+#s46 a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color:  rgb(21, 255, 0);
+}
+
+
+#h46 a {
+  color: rgb(0, 217, 255);
+}
+
+#h46 a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 217, 255);
+}
+
+
+#hgroup,
+#hprogram,
+#hmember,
+#hmusic {
+  width: 90%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+#hgroup,
+#hprogram,
+#hmember,
+#hmusic {
+  padding: 20px;
+  border: 3px solid rgb(0, 217, 255);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+#h46 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 217, 255);
+  padding: 20px;
+  border-radius: 7px;
+  z-index: 3;
+}
+
+
+#h46 h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 217, 255);
+  padding: 20px 0;
+  position: relative;
+}
+
+
+
+
+/* レスポンシブ */
+
+
+
+@media screen and (max-width: 481px) { 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(252, 235, 9);
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: #fff;
+  text-shadow: -2px 1px 0 #000;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main #tab {
+  display: flex;
+  justify-content: center;
+}
+
+#tab li {
+  width: 33.3%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#tab a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.5s;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+
+#tab #nogi a.active {
+  background-color: rgb(196, 2, 255);
+}
+#tab #saku a.active {
+  background-color: rgb(255, 161, 239);
+}
+#tab #hina a.active {
+  background-color: rgb(0, 217, 255);
+}
+
+#nogi {
+  background-color: #fff;
+  border-top: 2px solid rgb(196, 2, 255);
+  border-right: 2px solid rgb(196, 2, 255);
+  border-left: 2px solid rgb(196, 2, 255);
+}
+
+#saku {
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 161, 239);
+  border-right: 2px solid rgb(255, 161, 239);
+  border-left: 2px solid rgb(255, 161, 239);
+}
+
+#hina {
+  background-color: #fff;
+  border-top: 2px solid rgb(0, 217, 255);
+  border-right: 2px solid rgb(0, 217, 255);
+  border-left: 2px solid rgb(0, 217, 255);
+}
+
+/* コンテンツの中身 */
+.contents li {
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.contents li.active {
+  display: block;
+}
+
+p {
+  font-size: 12px;
+  line-height: 2.0;
+}
+
+#n46 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(196, 2, 255);
+  padding: 20px;
+}
+
+h2 {
+  display: block;
+  background-color: #fff;
+  white-space: nowrap;
+  width: 60%;
+  height: 50px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+}
+
+h2::first-letter{
+  font-size: 150%;
+  color:#000;
+}
+
+#n46 h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(196, 2, 255);
+  padding: 20px 0;
+  position: relative;
+}
+
+#n46 a {
+  color: rgb(196, 2, 255);
+  font-weight: bold;
+}
+
+#ngroup,
+#nprogram,
+#nmember,
+#nmusic {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#ngroup,
+#nprogram,
+#nmember,
+#nmusic {
+  padding: 20px;
+  border: 3px solid rgb(196, 2, 255);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.person {
+  border: double 2px rgb(252, 235, 9);
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  display: block;
+  top: 0%;
+  padding-bottom: 30px;
+  width: 30%;
+  height: 130px;
+  object-fit: contain;
+}
+
+#s46 a {
+  color:  rgb(255, 161, 239);
+  font-weight: bold;
+}
+
+
+#s46 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color:rgb(255, 161, 239);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+#s46 h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 161, 239);
+  padding: 20px 0;
+  position: relative;
+}
+
+
+
+#sgroup,
+#sprogram,
+#smember,
+#smusic {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+#sgroup,
+#sprogram,
+#smember,
+#smusic {
+  padding: 20px;
+  border: 3px solid rgb(255, 161, 239);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+#smusic h3{
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(21, 255, 0);
+  padding: 20px 0;
+  position: relative;
+}
+
+#smusic a{
+  font-size: 12px;
+  font-weight: bold;
+  color:rgb(21, 255, 0);
+  padding: 20px 0;
+  position: relative;
+}
+
+
+
+
+#h46 a {
+  color: rgb(0, 217, 255);
+  font-weight: bold;
+}
+
+
+#hgroup,
+#hprogram,
+#hmember,
+#hmusic {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+#hgroup,
+#hprogram,
+#hmember,
+#hmusic {
+  padding: 20px;
+  border: 3px solid rgb(0, 217, 255);
+  border-radius: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+#h46 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 217, 255);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+
+#h46 h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 217, 255);
+  padding: 20px 0;
+  position: relative;
+}
+  
+}
